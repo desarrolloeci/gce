@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence  http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Registro" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/registro</jta-data-source>
+    <class>com.escuela.gce.model.persistence.EventoEntity</class>
+    <class>com.escuela.gce.model.persistence.InscritoEntity</class>
+    <class>com.escuela.gce.model.persistence.PublicoEntity</class>
+    <class>com.escuela.gce.model.persistence.ConcursoEntity</class>
+    <class>com.escuela.gce.model.persistence.AsistenciaEntity</class>
+    <class>com.escuela.gce.model.persistence.PersonaActivaEntity</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="eclipselink.cache.shared.default" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>
